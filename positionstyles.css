@@ -1,0 +1,280 @@
+/* CSS - Name: "positionstyles.css" */
+/* Activity 1 styles */
+.content1 {
+  /* This is the parent of the activity 1 boxes. */
+display: grid;
+grid-template-columns: 1fr 1fr;
+justify-items: center;
+gap: 20px;
+}
+.red1 { 
+  width: 100%; 
+  height: 100px; 
+  background-color: red; 
+  grid-column: 1/3;
+
+} 
+.green1 {
+  width: 200px; 
+  height: 200px; 
+  background-color: green; 
+
+
+} 
+.yellow1 {
+  width: 200px; 
+  height: 200px; 
+  background-color: gold; 
+} 
+.blue1 {
+  width: 100%; 
+  height: 100px; 
+  background-color: blue; 
+  grid-column: 1/3;
+} 
+/* Activity 2 styles */ 
+.content2 {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px 50px 50px;
+  gap: 0; /* No gap between grid items */
+  position: relative; /* Enable absolute positioning within the grid */
+}
+.red2, .green2, .yellow2, .blue2 {
+  width: 100px; 
+  height: 100px;
+  position: absolute; /* Absolute positioning for overlap */
+}
+.red2 {
+  background-color: red; 
+  top: 0; 
+  left: 0;
+} 
+.green2 { 
+  background-color: green; 
+  top: 50px; 
+  left: 50px;
+} 
+.yellow2 {
+  background-color: gold; 
+  top: 100px; 
+  left: 100px;
+} 
+.blue2 {
+  background-color: blue; 
+  top: 150px; 
+  left: 150px;
+} 
+/* Activity 3 styles */ 
+.content3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 60px;
+}
+.red3 {
+  width: 100%; 
+  height: 100px; 
+  background-color: red; 
+  grid-column: 1/3;
+} 
+.green3 {
+  width: 100%; 
+  height: 200px; 
+  background-color: green;
+} 
+.yellow3 {
+  width: 100%; 
+  height: 200px; 
+  background-color: gold; 
+} 
+.blue3 {
+  width: 100%;
+  height: 100px; 
+  background-color: blue; 
+  grid-column: 1/3;
+} 
+/* Activity 4 styles */ 
+.content4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr); /* Create four equal rows */
+  height: 400px;
+}
+
+.red4 {
+  background-color: red; 
+  grid-column: 1 / 2; /* Spans the first column */
+  grid-row: 1 / 5; /* Spans all four rows */
+}
+
+.green4 {
+  background-color: green; 
+  grid-column: 2 / 3; /* Occupies the second column */
+  grid-row: 1/3; /* Occupies the first row */
+}
+
+.yellow4 {
+  background-color: gold; 
+  grid-column: 2 / 3; /* Occupies the second column */
+  grid-row: 2 / 3; /* Occupies the second row */
+}
+
+.blue4 {
+  background-color: blue; 
+  grid-column: 2 / 3; /* Occupies the second column */
+  grid-row: 3 / 3; /* Occupies the third row */
+}
+
+/* Activity 5 styles */ 
+.content5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: min-content; /* Ensures rows adjust to content height */
+  height: 400px;
+  position: relative; }
+.red5 { 
+  background-color: red; 
+  grid-column: 1 / 3; /* Spans both columns */
+  height: 100px; 
+} 
+
+.green5 { 
+  background-color: green; 
+  grid-column: 1 / 2; /* Occupies the first column */
+  grid-row: 2/3;
+  height: 200px; 
+  width: 200px; 
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+} 
+
+.yellow5 {
+  background-color: gold; 
+  grid-column: 1/3;
+  height: 300px; 
+  width: 100%; 
+  word-wrap: break-word; 
+  position: relative;
+  z-index: 0;
+}
+
+.blue5 {
+  background-color: blue; 
+  grid-column: 1 / 3;
+  height: 100px; 
+}
+/* Activity 6 styles */ 
+.content6 {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px 50px 50px;
+  gap: 0;
+  position: relative;
+}
+.blue6, .yellow6, .green6{
+  width: 100px; 
+  height: 100px;
+  position: absolute; /* Absolute positioning for overlap */
+}
+.red6 {
+  width: 150px;
+  height: 90px;
+  background-color: red; 
+  top: 0; 
+  left: 0;
+} 
+.blue6 {
+  width: 150px;
+  height: 150px;
+  background-color: blue; 
+  bottom: 50px; 
+  left: 50px;
+} 
+.yellow6 {
+  width: 100px;
+  height: 160px;
+  background-color: gold; 
+  bottom: 0px; 
+  left: 145px;
+} 
+.green6 { 
+  background-color: green; 
+  bottom: 0px; 
+  left: 0px;
+} 
+
+
+/* Do not make any changes below here */
+.activity {
+  width: 70%; 
+  margin: 20px auto; 
+  font-family: Arial, sans-serif; 
+  border: 1px solid black; 
+  padding: 10px; 
+  clear:both; 
+  overflow: auto;
+} 
+
+.hint {
+  border: 1px solid grey;
+  background: #e0e0e0;
+  padding: .5em;
+  position: relative;
+  margin: 1em 0;
+}
+.hint h3 {
+  margin: 0;
+}
+.hint:hover {
+  background: #d0d0d0;
+}
+.hint > div {
+  display: none;
+}
+
+.hint input[type=checkbox] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.hint input[type=checkbox]:checked ~ div {
+  display: block;
+}
+
+.hint i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 10px;
+  top: -3px;
+}
+.hint i:before, .hint i:after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 3px;
+  height: 9px;
+}
+.hint i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+.hint i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+.hint input[type=checkbox]:checked ~ i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+.hint input[type=checkbox]:checked ~ i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+.hint a {
+  position: relative;
+  z-index: 1;
+}
